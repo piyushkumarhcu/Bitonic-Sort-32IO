@@ -1,0 +1,40 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../bitonicSort_tb.cpp in debug mode
+   Compiling ../../../../bitonicSort.cpp in debug mode
+   Generating csim.exe
+numbers are: 82
+numbers are: 66
+numbers are: 22
+numbers are: 95
+numbers are: 92
+numbers are: 15
+numbers are: 15
+numbers are: 15
+numbers are: 11
+numbers are: 32
+numbers are: 18
+numbers are: 96
+numbers are: 4
+numbers are: 31
+numbers are: 34
+numbers are: 70
+numbers are: 71
+numbers are: 79
+numbers are: 85
+numbers are: 40
+numbers are: 1
+numbers are: 73
+numbers are: 45
+numbers are: 91
+numbers are: 77
+numbers are: 82
+numbers are: 25
+numbers are: 97
+numbers are: 2
+numbers are: 81
+numbers are: 7
+numbers are: 36
+1 2 4 7 11 15 15 15 18 22 25 31 32 34 36 40 45 66 70 71 73 77 79 81 82 82 85 91 92 95 96 97 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

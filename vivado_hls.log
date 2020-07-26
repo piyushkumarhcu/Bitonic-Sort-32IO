@@ -1,0 +1,148 @@
+INFO: [HLS 200-10] Running '/data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-957.12.2.el7.x86_64) on Sun Jul 26 13:11:48 EDT 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core) "
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/piyush/work/bitonic32'
+Sourcing Tcl script '/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/cosim.tcl'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort'.
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/data/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling bitonicSort_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_bitonicSort.cpp
+   Compiling bitonicSort.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+numbers are: 46
+numbers are: 99
+numbers are: 14
+numbers are: 32
+numbers are: 49
+numbers are: 42
+numbers are: 21
+numbers are: 94
+numbers are: 76
+numbers are: 44
+numbers are: 9
+numbers are: 20
+numbers are: 65
+numbers are: 19
+numbers are: 78
+numbers are: 95
+numbers are: 12
+numbers are: 13
+numbers are: 4
+numbers are: 52
+numbers are: 71
+numbers are: 35
+numbers are: 12
+numbers are: 58
+numbers are: 91
+numbers are: 92
+numbers are: 86
+numbers are: 16
+numbers are: 52
+numbers are: 17
+numbers are: 17
+numbers are: 98
+4 9 12 12 13 14 16 17 17 19 20 21 32 35 42 44 46 49 52 52 58 65 71 76 78 86 91 92 94 95 98 99 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/data/tools/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_bitonicSort_top glbl -prj bitonicSort.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/tools/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s bitonicSort 
+Multi-threading is on. Using 34 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_bitonicSort_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitonicSort
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort_mux_325_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitonicSort_mux_325_32_1_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bitonicSort_mux_325_32_1_1(ID=1,...
+Compiling module xil_defaultlib.bitonicSort
+Compiling module xil_defaultlib.apatb_bitonicSort_top
+Compiling module work.glbl
+Built simulation snapshot bitonicSort
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/xsim.dir/bitonicSort/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/xsim.dir/bitonicSort/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 26 13:12:18 2020. For additional details about this file, please refer to the WebTalk help file at /data/tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 26 13:12:18 2020...
+
+****** xsim v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/bitonicSort/xsim_script.tcl
+# xsim {bitonicSort} -autoloadwcfg -tclbatch {bitonicSort.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source bitonicSort.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "110000"
+// RTL Simulation : 1 / 1 [100.00%] @ "164000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 180960 ps : File "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort.autotb.v" Line 4032
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Jul 26 13:12:31 2020...
+INFO: [COSIM 212-316] Starting C post checking ...
+numbers are: 57
+numbers are: 85
+numbers are: 62
+numbers are: 50
+numbers are: 34
+numbers are: 52
+numbers are: 61
+numbers are: 6
+numbers are: 75
+numbers are: 48
+numbers are: 82
+numbers are: 51
+numbers are: 88
+numbers are: 60
+numbers are: 82
+numbers are: 41
+numbers are: 33
+numbers are: 79
+numbers are: 68
+numbers are: 94
+numbers are: 37
+numbers are: 10
+numbers are: 30
+numbers are: 93
+numbers are: 12
+numbers are: 49
+numbers are: 56
+numbers are: 44
+numbers are: 89
+numbers are: 99
+numbers are: 29
+numbers are: 46
+4 9 12 12 13 14 16 17 17 19 20 21 32 35 42 44 46 49 52 52 58 65 71 76 78 86 91 92 94 95 98 99 
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
