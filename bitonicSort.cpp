@@ -165,7 +165,7 @@ din_t a[N], b[N], c[N], d[N], e[N], f[N], g[N], h[N], l[N], m[N], n[N], o[N], p[
 #pragma HLS ARRAY_PARTITION variable=p
 #pragma HLS ARRAY_PARTITION variable=q
 
-//.........................Starting of first stage.....................//
+//.........................Starting first stage..........................//
 
 for(dloop_t i=0; i<N/4; i++){
     #pragma HLS unroll
@@ -179,7 +179,7 @@ for(dloop_t i=0; i<N/4; i++){
     a[4*i+2] = result.greater; a[4*i+3] = result.smaller; 
 }
 
-//.........................Starting of second stage......................//
+//.........................Starting second stage..........................//
 
 for(dloop_t i=0; i<N/8; i++){
     #pragma HLS unroll
@@ -187,7 +187,7 @@ for(dloop_t i=0; i<N/8; i++){
     FourinGreatFir(a[8*i+4], a[8*i+5], a[8*i+6], a[8*i+7], b[8*i+4], b[8*i+5], b[8*i+6], b[8*i+7]); 
 }
 
-//....................Starting of third stage.......................//
+//....................Starting third stage..............................//
 
 for(dloop_t i=0; i<N/8; i++){
     #pragma HLS unroll
@@ -207,7 +207,7 @@ for(dloop_t i=0; i<N/8; i++){
     c[8*i+6] = result.greater; c[8*i+7] = result.smaller;
 }
 
-//.....................Starting of fourth stage........................//
+//.....................Starting fourth stage..............................//
 
 for(dloop_t i=0; i<N/16; i++){
 EightinSmallFir(c[16*i+0], c[16*i+1], c[16*i+2], c[16*i+3], c[16*i+4], c[16*i+5], c[16*i+6], c[16*i+7],
@@ -216,7 +216,7 @@ EightinGreatFir(c[16*i+8], c[16*i+9], c[16*i+10], c[16*i+11], c[16*i+12], c[16*i
                  d[16*i+8], d[16*i+9], d[16*i+10], d[16*i+11], d[16*i+12], d[16*i+13], d[16*i+14], d[16*i+15]);
 }
 
-//.....................Starting of fifth stage..........................//
+//.....................Starting fifth stage................................//
 
 for(dloop_t i=0; i<N/16; i++){
     #pragma HLS unroll
@@ -226,7 +226,7 @@ for(dloop_t i=0; i<N/16; i++){
         FourinGreatFir(d[16*i+12], d[16*i+13], d[16*i+14], d[16*i+15], e[16*i+12], e[16*i+13], e[16*i+14], e[16*i+15]);
 }
 
-//.....................Starting of sixth stage..........................//
+//.....................Starting sixth stage..............................//
 
 for(dloop_t i=0; i<N/8; i++){
     #pragma HLS unroll
@@ -252,7 +252,7 @@ for(dloop_t i=0; i<N/8; i++){
     f[2*i+24] = result.greater; f[2*i+25] = result.smaller;
 }
 
-//.....................Starting of seventh stage..........................//
+//.....................Starting seventh stage.............................//
 
 SixteenSmallFir(f[0], f[1], f[2], f[3], f[4], f[5], f[6], f[7],
                  f[8], f[9], f[10], f[11], f[12], f[13], f[14], f[15], 
@@ -264,7 +264,7 @@ SixteenGreatFir(f[16], f[17], f[18], f[19], f[20], f[21], f[22], f[23],
                  g[25], g[26], g[27], g[28], g[29], g[30], g[31]);
 
 
-//.....................Starting of eighth stage..........................//
+//.....................Starting eighth stage..............................//
 
 for(dloop_t i=0; i<N/16; i++){
     #pragma HLS unroll
@@ -278,7 +278,7 @@ for(dloop_t i=0; i<N/16; i++){
                  h[8*i+16], h[8*i+17], h[8*i+18], h[8*i+19], h[8*i+20], h[8*i+21], h[8*i+22], h[8*i+23]);
 }
 
-//.....................Starting of ninth stage..........................//
+//.....................Starting ninth stage................................//
 
 for(dloop_t i=0; i<N/8; i++){
     #pragma HLS unroll
@@ -290,7 +290,7 @@ for(dloop_t i=0; i<N/8; i++){
     FourinGreatFir(h[4*i+16], h[4*i+17], h[4*i+18], h[4*i+19], l[4*i+16], l[4*i+17], l[4*i+18], l[4*i+19]);
 }
 
-//.....................Starting of tenth stage..........................//
+//.....................Starting tenth stage...............................//
 
 for(dloop_t i=0; i<N/4; i++)
 {
@@ -305,7 +305,7 @@ for(dloop_t i=0; i<N/4; i++){
     m[2*i+16] = result.greater; m[2*i+17] = result.smaller;
 }
 
-//.....................Starting of eleventh stage..........................//
+//.....................Starting eleventh stage.............................//
 
 for(dloop_t i=0; i<N/2; i++){
     #pragma HLS unroll
@@ -313,7 +313,7 @@ for(dloop_t i=0; i<N/2; i++){
     n[i] = result.smaller; n[i+16] = result.greater;
 }
 
-//.....................Starting of twelfth stage..........................//
+//.....................Starting twelfth stage............................//
 
 for(dloop_t i=0; i<N/16; i++){
     #pragma HLS unroll
@@ -323,7 +323,7 @@ for(dloop_t i=0; i<N/16; i++){
                  o[16*i+9], o[16*i+10], o[16*i+11], o[16*i+12], o[16*i+13], o[16*i+14], o[16*i+15]);
 }
 
-//.....................Starting of thirteenth stage..........................//
+//.....................Starting thirteenth stage..........................//
 
 for(dloop_t i=0; i<N/8; i++){
     #pragma HLS unroll
@@ -331,14 +331,14 @@ for(dloop_t i=0; i<N/8; i++){
                 p[8*i], p[8*i+1], p[8*i+2], p[8*i+3], p[8*i+4], p[8*i+5], p[8*i+6], p[8*i+7]);
 }
 
-//.....................Starting of fourteenth stage..........................//
+//.....................Starting fourteenth stage............................//
 
 for(dloop_t i=0; i<N/4; i++){
     #pragma HLS unroll
     FourinSmallFir(p[4*i], p[4*i+1], p[4*i+2], p[4*i+3], q[4*i], q[4*i+1], q[4*i+2], q[4*i+3]);
 }
 
-//.....................Starting of fifteenth stage..........................//
+//.....................Starting fifteenth stage..............................//
 
 for(dloop_t i=0; i<N/2; i++){
     #pragma HLS unroll
