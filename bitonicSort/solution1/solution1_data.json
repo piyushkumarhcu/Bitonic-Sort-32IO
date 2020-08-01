@@ -12,9 +12,11 @@
     "Package": "-flgc2104",
     "Speed": "-1-e"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_sdx -optimization_level=none",
+      "config_sdx -target=none",
+      "config_export -vivado_optimization_level=2"
+    ]},
   "Args": {
     "in": {
       "index": "0",
@@ -38,13 +40,13 @@
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "4.167",
+    "ClockPeriod": "2.778",
     "IsCombLogic": "0",
-    "II": "x",
-    "Latency": "11",
-    "Uncertainty": "1.25"
+    "II": "9",
+    "Latency": "9",
+    "Uncertainty": "0.833"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 4.167 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 2.778 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -58,14 +60,8 @@
   },
   "Files": {
     "CSource": ["..\/..\/bitonicSort.cpp"],
-    "Vhdl": [
-      "impl\/vhdl\/bitonicSort_mux_325_32_1_1.vhd",
-      "impl\/vhdl\/bitonicSort.vhd"
-    ],
-    "Verilog": [
-      "impl\/verilog\/bitonicSort_mux_325_32_1_1.v",
-      "impl\/verilog\/bitonicSort.v"
-    ],
+    "Vhdl": ["impl\/vhdl\/bitonicSort.vhd"],
+    "Verilog": ["impl\/verilog\/bitonicSort.v"],
     "Misc": ["impl\/misc\/logo.png"],
     "DesignXml": "\/afs\/cern.ch\/user\/p\/piyush\/work\/bitonic32\/bitonicSort\/solution1\/.autopilot\/db\/bitonicSort.design.xml",
     "DebugDir": "\/afs\/cern.ch\/user\/p\/piyush\/work\/bitonic32\/bitonicSort\/solution1\/.debug",
@@ -1221,34 +1217,27 @@
     "Info": {"bitonicSort": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "0",
+        "isPipelined": "1",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       }},
     "Metrics": {"bitonicSort": {
         "Latency": {
-          "LatencyBest": "11",
-          "LatencyAvg": "11",
-          "LatencyWorst": "11",
-          "PipelineII": "12",
-          "PipelineDepth": "",
-          "PipelineType": "none"
+          "LatencyBest": "9",
+          "LatencyAvg": "9",
+          "LatencyWorst": "9",
+          "PipelineII": "9",
+          "PipelineDepth": "10",
+          "PipelineType": "function"
         },
         "Timing": {
-          "Target": "4.17",
-          "Uncertainty": "1.25",
-          "Estimate": "2.818"
+          "Target": "2.78",
+          "Uncertainty": "0.83",
+          "Estimate": "1.890"
         },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "2",
-            "Latency": "4",
-            "PipelineII": "",
-            "PipelineDepth": "2"
-          }],
         "Area": {
-          "FF": "8477",
-          "LUT": "23345",
+          "FF": "9307",
+          "LUT": "20229",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -1265,7 +1254,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-07-26 13:10:41 EDT",
+    "Time": "2020-08-01 04:57:47 EDT",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

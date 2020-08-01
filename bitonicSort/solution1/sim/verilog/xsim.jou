@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jul 26 13:12:19 2020
-# Process ID: 454669
+# Start of session at: Sat Aug  1 04:59:32 2020
+# Process ID: 418341
 # Current directory: /afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/bitonicSort/xsim_script.tcl}
 # Log file: /afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/xsim.log

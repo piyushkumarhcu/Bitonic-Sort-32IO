@@ -4,8 +4,8 @@ set isTaskLevelControl 1
 set isCombinational 0
 set isDatapathOnly 0
 set isFreeRunPipelineModule 0
-set isPipelined 0
-set pipeline_type none
+set isPipelined 1
+set pipeline_type function
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
@@ -355,13 +355,13 @@ set NewPortList {[
  	{ "name": "out_31_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "out_31_V", "role": "ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
 		"CDFG" : "bitonicSort",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "11", "EstimateLatencyMax" : "11",
+		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "9",
+		"VariableLatency" : "0", "ExactLatency" : "9", "EstimateLatencyMin" : "9", "EstimateLatencyMax" : "9",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -432,23 +432,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_28_V", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "out_29_V", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "out_30_V", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "out_31_V", "Type" : "Vld", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U1", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U2", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U3", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U4", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U5", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U6", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U7", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U8", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U9", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U10", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U11", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U12", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U13", "Parent" : "0"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U14", "Parent" : "0"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U15", "Parent" : "0"},
-	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitonicSort_mux_325_32_1_1_U16", "Parent" : "0"}]}
+			{"Name" : "out_31_V", "Type" : "Vld", "Direction" : "O"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -485,47 +469,48 @@ set ArgLastReadFirstWriteLatency {
 		in_29_V {Type I LastRead 0 FirstWrite -1}
 		in_30_V {Type I LastRead 0 FirstWrite -1}
 		in_31_V {Type I LastRead 0 FirstWrite -1}
-		out_0_V {Type O LastRead -1 FirstWrite 7}
-		out_1_V {Type O LastRead -1 FirstWrite 7}
-		out_2_V {Type O LastRead -1 FirstWrite 7}
-		out_3_V {Type O LastRead -1 FirstWrite 7}
-		out_4_V {Type O LastRead -1 FirstWrite 7}
-		out_5_V {Type O LastRead -1 FirstWrite 7}
-		out_6_V {Type O LastRead -1 FirstWrite 7}
-		out_7_V {Type O LastRead -1 FirstWrite 7}
-		out_8_V {Type O LastRead -1 FirstWrite 7}
-		out_9_V {Type O LastRead -1 FirstWrite 7}
-		out_10_V {Type O LastRead -1 FirstWrite 7}
-		out_11_V {Type O LastRead -1 FirstWrite 7}
-		out_12_V {Type O LastRead -1 FirstWrite 7}
-		out_13_V {Type O LastRead -1 FirstWrite 7}
-		out_14_V {Type O LastRead -1 FirstWrite 7}
-		out_15_V {Type O LastRead -1 FirstWrite 7}
-		out_16_V {Type O LastRead -1 FirstWrite 7}
-		out_17_V {Type O LastRead -1 FirstWrite 7}
-		out_18_V {Type O LastRead -1 FirstWrite 7}
-		out_19_V {Type O LastRead -1 FirstWrite 7}
-		out_20_V {Type O LastRead -1 FirstWrite 7}
-		out_21_V {Type O LastRead -1 FirstWrite 7}
-		out_22_V {Type O LastRead -1 FirstWrite 7}
-		out_23_V {Type O LastRead -1 FirstWrite 7}
-		out_24_V {Type O LastRead -1 FirstWrite 7}
-		out_25_V {Type O LastRead -1 FirstWrite 7}
-		out_26_V {Type O LastRead -1 FirstWrite 7}
-		out_27_V {Type O LastRead -1 FirstWrite 7}
-		out_28_V {Type O LastRead -1 FirstWrite 7}
-		out_29_V {Type O LastRead -1 FirstWrite 7}
-		out_30_V {Type O LastRead -1 FirstWrite 7}
-		out_31_V {Type O LastRead -1 FirstWrite 7}}}
+		out_0_V {Type O LastRead -1 FirstWrite 9}
+		out_1_V {Type O LastRead -1 FirstWrite 9}
+		out_2_V {Type O LastRead -1 FirstWrite 9}
+		out_3_V {Type O LastRead -1 FirstWrite 9}
+		out_4_V {Type O LastRead -1 FirstWrite 9}
+		out_5_V {Type O LastRead -1 FirstWrite 9}
+		out_6_V {Type O LastRead -1 FirstWrite 9}
+		out_7_V {Type O LastRead -1 FirstWrite 9}
+		out_8_V {Type O LastRead -1 FirstWrite 9}
+		out_9_V {Type O LastRead -1 FirstWrite 9}
+		out_10_V {Type O LastRead -1 FirstWrite 9}
+		out_11_V {Type O LastRead -1 FirstWrite 9}
+		out_12_V {Type O LastRead -1 FirstWrite 9}
+		out_13_V {Type O LastRead -1 FirstWrite 9}
+		out_14_V {Type O LastRead -1 FirstWrite 9}
+		out_15_V {Type O LastRead -1 FirstWrite 9}
+		out_16_V {Type O LastRead -1 FirstWrite 9}
+		out_17_V {Type O LastRead -1 FirstWrite 9}
+		out_18_V {Type O LastRead -1 FirstWrite 9}
+		out_19_V {Type O LastRead -1 FirstWrite 9}
+		out_20_V {Type O LastRead -1 FirstWrite 9}
+		out_21_V {Type O LastRead -1 FirstWrite 9}
+		out_22_V {Type O LastRead -1 FirstWrite 9}
+		out_23_V {Type O LastRead -1 FirstWrite 9}
+		out_24_V {Type O LastRead -1 FirstWrite 9}
+		out_25_V {Type O LastRead -1 FirstWrite 9}
+		out_26_V {Type O LastRead -1 FirstWrite 9}
+		out_27_V {Type O LastRead -1 FirstWrite 9}
+		out_28_V {Type O LastRead -1 FirstWrite 9}
+		out_29_V {Type O LastRead -1 FirstWrite 9}
+		out_30_V {Type O LastRead -1 FirstWrite 9}
+		out_31_V {Type O LastRead -1 FirstWrite 9}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "11", "Max" : "11"}
-	, {"Name" : "Interval", "Min" : "12", "Max" : "12"}
+	{"Name" : "Latency", "Min" : "9", "Max" : "9"}
+	, {"Name" : "Interval", "Min" : "9", "Max" : "9"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

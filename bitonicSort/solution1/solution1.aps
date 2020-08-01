@@ -5,11 +5,10 @@
     <downStreamTool>
         <DownStreamTool name="vivado"/>
     </downStreamTool>
-    <clockList>
-        <clock name="default" period="240MHz" uncertainty="30%"/>
-    </clockList>
     <config>
         <schedule model="bitonicSort"/>
+        <config_sdx optimization_level="none" target="none"/>
+        <config_export vivado_optimization_level="2"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -50,7 +49,7 @@
         <Format formatName="pcore" use_netlist="none"/>
     </ExportDesign>
     <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="xsim" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="xsim" waveDebug="false" ldflags="" mflags="" compiledLibrary="">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -69,5 +68,8 @@
         <library name="DefaultPlatform" value="xilinx/virtexuplus/virtexuplus"/>
         <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
     </libraryList>
+    <clockList>
+        <clock name="default" uncertainty="12.5%" period="360MHz"/>
+    </clockList>
 </solution>
 

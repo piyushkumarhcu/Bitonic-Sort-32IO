@@ -53,6 +53,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
@@ -86,6 +88,8 @@
                                 <option id="gnu.c.compiler.option.include.paths.287502985" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     									
@@ -157,6 +161,36 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1545668701.533448588" name="bitonicSort_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/bitonicSort_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1813320299.1074674422">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1813320299.1074674422" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1813320299">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2114674716" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1988193179" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.923610591" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.317995657" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -221,6 +255,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
@@ -244,6 +280,8 @@
                                 <option id="gnu.c.compiler.option.include.paths.964644303" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
                                     									
                                     <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
                                     									
@@ -304,6 +342,36 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1979301618.49074196" name="bitonicSort_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/bitonicSort_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2011583943.999184680">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2011583943.999184680" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2011583943">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1396348579" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1432217248" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/afs/cern.ch/user/p/piyush/work/bitonic32"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/data/tools/Xilinx/Vivado/2019.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.636753560" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2112222337" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						

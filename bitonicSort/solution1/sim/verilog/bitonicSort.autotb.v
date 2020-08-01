@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "bitonicSort.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_bitonicSort_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 2.08
+`define AUTOTB_CLOCK_PERIOD_DIV2 1.39
 
 `define AESL_DEPTH_in_0_V 1
 `define AESL_DEPTH_in_1_V 1
@@ -210,7 +210,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 11;
+parameter LATENCY_ESTIMATION = 9;
 parameter LENGTH_in_0_V = 1;
 parameter LENGTH_in_1_V = 1;
 parameter LENGTH_in_2_V = 1;
@@ -4424,6 +4424,13 @@ initial begin : simulation_progress
                 end
             end
         end
+        // non-dataflow design && latency is predictable && no AXI master/slave interface
+        get_intra_progress(intra_progress);
+        if (intra_progress > 1000) begin
+            $display("// RTL Simulation : transaction %0d run-time latency is greater than %0f time(s) of the prediction @ \"%0t\"", start_cnt, intra_progress, $time);
+            $display("////////////////////////////////////////////////////////////////////////////////////");
+            $finish;
+        end
     end
     print_progress();
     $display("////////////////////////////////////////////////////////////////////////////////////");
@@ -4489,7 +4496,7 @@ task calculate_performance();
                 interval_min = 0;
                 interval_total = 0;
             end else if (i < AUTOTB_TRANSACTION_NUM - 1) begin
-                interval[i] = finish_timestamp[i] - start_timestamp[i]+1;
+                interval[i] = start_timestamp[i + 1] - start_timestamp[i];
                 if (interval[i] > interval_max) interval_max = interval[i];
                 if (interval[i] < interval_min) interval_min = interval[i];
                 interval_total = interval_total + interval[i];

@@ -1,10 +1,10 @@
 
 set TopModule "bitonicSort"
-set ClockPeriod 4.167
+set ClockPeriod 2.778
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
-set PipelineFlag 0
+set PipelineFlag 1
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0

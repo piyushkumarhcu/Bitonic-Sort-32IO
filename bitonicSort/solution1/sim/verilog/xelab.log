@@ -1,7 +1,7 @@
 INFO: [XSIM 43-3496] Using init file passed via -initfile option "/data/tools/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_bitonicSort_top glbl -prj bitonicSort.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/tools/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s bitonicSort 
+Running: /data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_bitonicSort_top glbl -prj bitonicSort.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/tools/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s bitonicSort -debug wave 
 Multi-threading is on. Using 34 slave threads.
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
@@ -9,14 +9,11 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/wo
 INFO: [VRFC 10-311] analyzing module apatb_bitonicSort_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bitonicSort
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/afs/cern.ch/user/p/piyush/work/bitonic32/bitonicSort/solution1/sim/verilog/bitonicSort_mux_325_32_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bitonicSort_mux_325_32_1_1
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.bitonicSort_mux_325_32_1_1(ID=1,...
 Compiling module xil_defaultlib.bitonicSort
 Compiling module xil_defaultlib.apatb_bitonicSort_top
 Compiling module work.glbl

@@ -24975,7 +24975,7 @@ void bitonicSort(din_t in[32], din_t out[32]);
 
 
 GreaterSmaller AscendDescend(const din_t &x, const din_t &y){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller s;
 
@@ -24987,7 +24987,7 @@ _ssdm_InlineSelf(0, "");
 
 void FourinSmallFir(const din_t &x0, const din_t &x1, const din_t &x2, const din_t &x3,
      din_t &y0, din_t &y1, din_t &y2, din_t &y3){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res1;
         res1 = AscendDescend(x0, x2);
@@ -24999,7 +24999,7 @@ _ssdm_InlineSelf(0, "");
 
 void FourinGreatFir(const din_t &x0, const din_t &x1, const din_t &x2, const din_t &x3,
      din_t &y0, din_t &y1, din_t &y2, din_t &y3){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res2;
         res2 = AscendDescend(x0, x2);
@@ -25011,7 +25011,7 @@ _ssdm_InlineSelf(0, "");
 
 void EightinSmallFir(const din_t &x0, const din_t &x1, const din_t &x2, const din_t &x3, const din_t &x4, const din_t &x5,
                 const din_t &x6, const din_t &x7, din_t &y0, din_t &y1, din_t &y2, din_t &y3, din_t &y4, din_t &y5, din_t &y6, din_t &y7){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res3;
         res3 = AscendDescend(x0, x4);
@@ -25030,7 +25030,7 @@ _ssdm_InlineSelf(0, "");
 
 void EightinGreatFir(const din_t &x8, const din_t &x9, const din_t &x10, const din_t &x11, const din_t &x12, const din_t &x13,
                 const din_t &x14, const din_t &x15, din_t &y8, din_t &y9, din_t &y10, din_t &y11, din_t &y12, din_t &y13, din_t &y14, din_t &y15){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res4;
         res4 = AscendDescend(x8, x12);
@@ -25052,7 +25052,7 @@ void SixteenSmallFir(const din_t &x0, const din_t &x1, const din_t &x2, const di
                      const din_t &x13, const din_t &x14, const din_t &x15, din_t &y0, din_t &y1, din_t &y2, din_t &y3, din_t &y4, din_t &y5, din_t &y6,
                     din_t &y7, din_t &y8, din_t &y9, din_t &y10, din_t &y11, din_t &y12, din_t &y13, din_t &y14, din_t &y15){
 
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res5;
 
@@ -25086,7 +25086,7 @@ void SixteenGreatFir(const din_t &x16, const din_t &x17, const din_t &x18, const
                      const din_t &x29, const din_t &x30, const din_t &x31, din_t &y16, din_t &y17, din_t &y18, din_t &y19, din_t &y20, din_t &y21, din_t &y22,
                     din_t &y23, din_t &y24, din_t &y25, din_t &y26, din_t &y27, din_t &y28, din_t &y29, din_t &y30, din_t &y31){
 
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 _ssdm_InlineSelf(0, "");
  GreaterSmaller res6;
 
@@ -25116,6 +25116,7 @@ _ssdm_InlineSelf(0, "");
 }
 
 void bitonicSort(din_t in[32], din_t out[32]){_ssdm_SpecArrayDimSize(in, 32);_ssdm_SpecArrayDimSize(out, 32);
+_ssdm_op_SpecPipeline(9, 1, 1, 0, "");
 
 _ssdm_SpecArrayPartition( in, 1, "complete", 0, "");
 _ssdm_SpecArrayPartition( out, 1, "complete", 0, "");
