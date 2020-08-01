@@ -352,3 +352,344 @@ INFO: [RTGEN 206-500]===========================================================
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.347ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'bitonicSort.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17108 ; free virtual = 81522
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17108 ; free virtual = 81522
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:346).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:313).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:305).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:299).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:252).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:240).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:234).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:207).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:204).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:198).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:195).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:179).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:173).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:138).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:135).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:132).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:126).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:120).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:107).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:104).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:101).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:98).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:95).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:92).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:89).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:86).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:72).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:69).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:66).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:63).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:50).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:47).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (bitonicSort.cpp:35).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (bitonicSort.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (bitonicSort.cpp:23).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (bitonicSort.cpp:20).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:339).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:286).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:225).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:224).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:187).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:291).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:227).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:226).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:188).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:332).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:273).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:215).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort' (bitonicSort.cpp:279).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort' (bitonicSort.cpp:217).
+INFO: [XFORM 203-603] Inlining function 'SixteenSmallFir' into 'bitonicSort' (bitonicSort.cpp:324).
+INFO: [XFORM 203-603] Inlining function 'SixteenSmallFir' into 'bitonicSort' (bitonicSort.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'SixteenGreatFir' into 'bitonicSort' (bitonicSort.cpp:262).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17084 ; free virtual = 81501
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17082 ; free virtual = 81501
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitonicSort' (bitonicSort.cpp:145).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (bitonicSort.cpp:171) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (bitonicSort.cpp:177) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (bitonicSort.cpp:185) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (bitonicSort.cpp:193) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (bitonicSort.cpp:202) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (bitonicSort.cpp:213) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (bitonicSort.cpp:222) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (bitonicSort.cpp:232) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (bitonicSort.cpp:238) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (bitonicSort.cpp:244) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (bitonicSort.cpp:250) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (bitonicSort.cpp:270) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (bitonicSort.cpp:276) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (bitonicSort.cpp:284) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-15' (bitonicSort.cpp:289) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (bitonicSort.cpp:296) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-17' (bitonicSort.cpp:303) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18' (bitonicSort.cpp:311) in function 'bitonicSort' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19' (bitonicSort.cpp:319) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (bitonicSort.cpp:329) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-21' (bitonicSort.cpp:337) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (bitonicSort.cpp:344) in function 'bitonicSort' completely with a factor of 16.
+INFO: [XFORM 203-101] Partitioning array 'in.V' (bitonicSort.cpp:145) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out.V' (bitonicSort.cpp:145) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'a.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'd.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'e.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'f.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'g.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'h.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'm.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'n.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'o.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'p.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'q.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17043 ; free virtual = 81464
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 17042 ; free virtual = 81464
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'bitonicSort' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitonicSort' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bitonicSort'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 9, Final II = 8, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.02 seconds; current allocated memory: 138.681 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.14 seconds; current allocated memory: 142.240 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitonicSort' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_0_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_3_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_4_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_5_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_6_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_7_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_8_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_9_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_10_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_11_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_12_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_13_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_14_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_15_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_16_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_17_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_18_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_19_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_20_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_21_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_22_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_23_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_24_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_25_V' to 'ap_none'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.347ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'bitonicSort.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16999 ; free virtual = 81425
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16999 ; free virtual = 81425
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:346).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:313).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:305).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:299).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:252).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:240).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:234).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:207).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:204).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:198).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:195).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:179).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort' (bitonicSort.cpp:173).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:138).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:135).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:132).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:126).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenGreatFir' (bitonicSort.cpp:120).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:107).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:104).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:101).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:98).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:95).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:92).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:89).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'SixteenSmallFir' (bitonicSort.cpp:86).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:72).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:69).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:66).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (bitonicSort.cpp:63).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:50).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:47).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (bitonicSort.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (bitonicSort.cpp:35).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (bitonicSort.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (bitonicSort.cpp:23).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (bitonicSort.cpp:20).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:339).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:286).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:225).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:224).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort' (bitonicSort.cpp:187).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:291).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:227).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:226).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort' (bitonicSort.cpp:188).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:332).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:273).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort' (bitonicSort.cpp:215).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort' (bitonicSort.cpp:279).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort' (bitonicSort.cpp:217).
+INFO: [XFORM 203-603] Inlining function 'SixteenSmallFir' into 'bitonicSort' (bitonicSort.cpp:324).
+INFO: [XFORM 203-603] Inlining function 'SixteenSmallFir' into 'bitonicSort' (bitonicSort.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'SixteenGreatFir' into 'bitonicSort' (bitonicSort.cpp:262).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16974 ; free virtual = 81404
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16972 ; free virtual = 81403
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitonicSort' (bitonicSort.cpp:145).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (bitonicSort.cpp:171) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (bitonicSort.cpp:177) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (bitonicSort.cpp:185) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (bitonicSort.cpp:193) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (bitonicSort.cpp:202) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (bitonicSort.cpp:213) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (bitonicSort.cpp:222) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (bitonicSort.cpp:232) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (bitonicSort.cpp:238) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (bitonicSort.cpp:244) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (bitonicSort.cpp:250) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (bitonicSort.cpp:270) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (bitonicSort.cpp:276) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (bitonicSort.cpp:284) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-15' (bitonicSort.cpp:289) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (bitonicSort.cpp:296) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-17' (bitonicSort.cpp:303) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18' (bitonicSort.cpp:311) in function 'bitonicSort' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19' (bitonicSort.cpp:319) in function 'bitonicSort' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (bitonicSort.cpp:329) in function 'bitonicSort' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-21' (bitonicSort.cpp:337) in function 'bitonicSort' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (bitonicSort.cpp:344) in function 'bitonicSort' completely with a factor of 16.
+INFO: [XFORM 203-101] Partitioning array 'in.V' (bitonicSort.cpp:145) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out.V' (bitonicSort.cpp:145) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'a.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'd.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'e.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'f.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'g.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'h.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'm.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'n.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'o.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'p.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'q.V' (bitonicSort.cpp:153) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16932 ; free virtual = 81365
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 16932 ; free virtual = 81365
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'bitonicSort' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitonicSort' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bitonicSort'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 9, Final II = 9, Depth = 10.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.3 seconds; current allocated memory: 138.573 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.2 seconds; current allocated memory: 142.335 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitonicSort' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_0_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_3_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_4_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_5_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_6_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_7_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_8_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_9_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_10_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_11_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_12_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_13_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_14_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_15_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_16_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_17_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_18_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_19_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_20_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_21_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_22_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_23_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_24_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_25_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_26_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_27_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_28_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_29_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'bitonicSort/in_30_V' to 'ap_none'.

@@ -10,9 +10,9 @@ add_files -tb bitonicSort_tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno
 open_solution "solution1"
 set_part {xcvu9p-flgc2104-1-e} -tool vivado
 create_clock -period 360MHz -name default
-config_sdx -optimization_level none -target none
-config_export -vivado_optimization_level 2
-set_clock_uncertainty 12.5%
+config_sdx -target none
+config_export -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0
+set_clock_uncertainty 30%
 #source "./bitonicSort/solution1/directives.tcl"
 csim_design -clean
 csynth_design

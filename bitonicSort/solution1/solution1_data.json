@@ -13,9 +13,10 @@
     "Speed": "-1-e"
   },
   "HlsSolution": {"Config": [
-      "config_sdx -optimization_level=none",
       "config_sdx -target=none",
-      "config_export -vivado_optimization_level=2"
+      "config_export -vivado_optimization_level=2",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0"
     ]},
   "Args": {
     "in": {
@@ -1254,7 +1255,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-08-01 04:57:47 EDT",
+    "Time": "2020-08-01 05:28:33 EDT",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }
